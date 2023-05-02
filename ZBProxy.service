@@ -1,0 +1,13 @@
+[Unit]
+Description=ZBProxy Service
+Documentation=https://github.com/layou233/ZBProxy
+After=network.target nss-lookup.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/ZBProxy
+KillSignal=SIGTERM
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

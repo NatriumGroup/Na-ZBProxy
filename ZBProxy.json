@@ -1,0 +1,39 @@
+{
+    "Services": [
+        {
+            "Name": "HypixelDefault",
+            "TargetAddress": "mc.hypixel.net",
+            "Group": "",
+            "TargetPort": 25565,
+            "Listen": 25565,
+            "Flow": "auto",
+            "IPAccess": {
+                "Mode": ""
+            },
+            "Minecraft": {
+                "EnableHostnameRewrite": true,
+                "EnableHostnameAccess": false,
+                "OnlineCount": {
+                    "Max": 114514,
+                    "Online": -1,
+                    "EnableMaxLimit": false
+                },
+                "NameAccess": {
+                    "Mode": "allow",
+					"ListTags": []
+                },
+                "AnyDestSettings": {},
+                "PingMode": "",
+                "MotdFavicon": "{DEFAULT_MOTD}",
+                "MotdDescription": "§d{NAME}§e service is working on §a§o{INFO}§r\n§c§lProxy for §6§n{HOST}:{PORT}§r"
+            },
+            "TLSSniffing": {
+                "RejectNonTLS": false
+            },
+            "Outbound": {
+                "Type": ""
+            }
+        }
+    ],
+    "Lists": {}
+}
